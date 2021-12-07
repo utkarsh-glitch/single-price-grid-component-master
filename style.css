@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+section {
+    min-height: 97vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 10px 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 30px;
+}
+
+h2 {
+    padding-bottom: 50px;
+    color: hsl(179, 62%, 43%);
+}
+
+.card1 {
+    background-color: white;
+}
+
+.card1 h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 30px;
+}
+
+.card1 p {
+    color: hsl(179, 62%, 43%);
+    word-spacing: 3px;
+}
+
+.card2 {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.card3 {
+    background-color: hsl(218, 22%, 67%);
+}
+
+.two {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.only {
+    font-size: 30px;
+    font-weight: 700;
+    padding-right: 15px;
+    color: white;
+}
+
+.one-two {
+    color: hsl(204, 43%, 93%);
+}
+
+.second {
+    color: hsl(204, 43%, 93%);
+    padding-top: 10px;
+    word-spacing: 1.9px;
+    margin-bottom: 20px;
+}
+
+.card2 .btn {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    padding: 16px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 14px 1px #00000024;
+}
+
+.three {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.third {
+    color: hsl(204, 43%, 93%);
+    word-spacing: 10px;
+    line-height: 25px;
+}
+
+@media only screen and (min-width:760px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card1 {
+        grid-area: 1/ 1/ 2/ 3;
+    }
+    .card2 .card3 {
+        grid-row: 2;
+    }
+}
